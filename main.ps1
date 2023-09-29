@@ -1,10 +1,16 @@
-
-# . "C:\PersonalMyCode\PowerShellScratch\addition.ps1"  
-
-
-
+# . "$PSScriptRoot\Modules\*.ps1" #Doesn't work.
+. "$PSScriptRoot\Modules\StartAhk.ps1"
 . "$PSScriptRoot\Modules\SelectMonth.ps1"
-# . "C:\PersonalMyCode\UpdateBudget2\Modules\SelectMonth.ps1"
+. "$PSScriptRoot\Modules\SelectYear.ps1"
+. "$PSScriptRoot\Modules\SetAccountHistoryPaths.ps1"
+. "$PSScriptRoot\Modules\ImportAccountHistory.ps1"
+. "$PSScriptRoot\Modules\ImportExistingBudget.ps1"
+. "$PSScriptRoot\Modules\BackupBudget.ps1"
+. "$PSScriptRoot\Modules\Deduplicate.ps1"
+. "$PSScriptRoot\Modules\ExportExpenses.ps1"
+. "$PSScriptRoot\Modules\DeleteAccountHistoryFiles.ps1"
+. "$PSScriptRoot\Modules\OpenOutput.ps1"
+
 
 
 $outputPath = "C:\PersonalMyCode\UpdateBudget\output.csv"
@@ -15,20 +21,21 @@ Write-Host "Welcome to Budginator!" -ForegroundColor Green
 
 $month = SelectMonth
 Write-Host $month
-# $year = SelectYear
+$year = SelectYear
+Write-Host $year
 
-# $accountHistoryPaths = SetAccountHistoryPaths
+$accountHistoryPaths = SetAccountHistoryPaths
 
-# $accountHistory = ImportAccountHistory $year $month $accountHistoryPaths
+$accountHistory = ImportAccountHistory $year $month $accountHistoryPaths
 
-# $existingBudget = ImportExistingBudget $month
+$existingBudget = ImportExistingBudget $month
 
-# BackupBudget
+BackupBudget
 
-# $verifiedExpenses = Deduplicate $accountHistory $existingBudget
+$verifiedExpenses = Deduplicate $accountHistory $existingBudget
 
-# ExportExpenses $verifiedExpenses $outputPath
+ExportExpenses $verifiedExpenses $outputPath
 
-# DeleteAccountHistoryFiles $accountHistoryPaths
+DeleteAccountHistoryFiles $accountHistoryPaths
 
-# OpenOutput $outputPath
+OpenOutput $outputPath
