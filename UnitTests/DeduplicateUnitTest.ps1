@@ -1,16 +1,35 @@
-. $PSScriptRoot\..\Modules\Deduplicate.ps1
+
+function main{
+    . $PSScriptRoot\..\Modules\Deduplicate.ps1
     
-$accountHistory = Import-Csv $PSScriptRoot/accountHistory.csv
-$existingBudget = Import-Csv $PSScriptRoot/existingBudget.csv
+    $accountHistory = Import-Csv $PSScriptRoot/accountHistory.csv
+    $existingBudget = Import-Csv $PSScriptRoot/existingBudget.csv
 
-Write-Host "Here's the accountHistory"
-Write-Host $accountHistory
-Write-Host "Here's the existingBudget"
-Write-Host $existingBudget
+    # Write-Host "Here's the accountHistory"
+    # Write-Host $accountHistory
+    # Write-Host "Here's the existingBudget"
+    # Write-Host $existingBudget
 
-
-$verifiedExpenses = Deduplicate $accountHistory $existingBudget
+    $verifiedExpenses = Deduplicate $accountHistory $existingBudget
     
+    Write-Host "`n`n -----Running unit tests!-----`n"
+    if(!(TestTotalCount $verifiedExpenses)){
+        Write-Host "TestTotalCount failed." -ForegroundColor Red
+    }else{
+        Write-Host "TestTotalCount succeeded" -ForegroundColor Green
+    }
+    if(!(TestRewardMethod $verifiedExpenses)){
+        Write-Host "TestRewardMethod failed." -ForegroundColor Red
+    }else{
+        Write-Host "TestRewardMethod succeeded" -ForegroundColor Green
+    }
+    if(!(TestCheckingMethod $verifiedExpenses)){
+        Write-Host "TestCheckingMethod failed." -ForegroundColor Red
+    }else{
+        Write-Host "TestCheckingMethod succeeded" -ForegroundColor Green
+    }
+}
+
 
 # Check if it returns the right number of items.
 function TestTotalCount{
@@ -31,7 +50,7 @@ function TestRewardMethod{
     )
     $rewardCount = 0
     foreach($item in $verifiedExpenses){
-        if($item.method -eq "Reward"){
+        if($item.method -eq "Rewards"){
             $rewardCount ++
         }
     }
@@ -60,22 +79,13 @@ function TestCheckingMethod{
 }
 
     # Check if it's converting credit (negatives) correctly.
-
+    
     
     # Check if it returns arbitrary exceptions correctly.
 
 
 
-if(!(TestTotalCount)){
-    Write-Host "TestTotalCount failed." -ForegroundColor Red
-}
-if(!(TestRewardMethod)){
-    Write-Host "TestRewardMethod failed." -ForegroundColor Red
-}
-if(!(TestCheckingMethod)){
-    Write-Host "TestCheckingMethod failed." -ForegroundColor Red
-}
-
+Main
 
 
 # Check if it's counting existing budget items correctly. - Probably not good because it's only testing a $existingBudget.Count
