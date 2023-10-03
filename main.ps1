@@ -7,17 +7,17 @@
 . "$PSScriptRoot\Modules\ImportExistingBudget.ps1"
 . "$PSScriptRoot\Modules\BackupBudget.ps1"
 . "$PSScriptRoot\Modules\Deduplicate.ps1"
+. "$PSScriptRoot\Modules\ArbitraryExceptions.ps1"
 . "$PSScriptRoot\Modules\ExportExpenses.ps1"
 . "$PSScriptRoot\Modules\DeleteAccountHistoryFiles.ps1"
 . "$PSScriptRoot\Modules\OpenOutput.ps1"
-
 
 
 $outputPath = "C:\PersonalMyCode\UpdateBudget\output.csv"
 
 Write-Host "Welcome to Budginator!" -ForegroundColor Green
 
-# StartAhk
+StartAhk
 
 $month = SelectMonth
 Write-Host $month
@@ -33,6 +33,10 @@ $existingBudget = ImportExistingBudget $month
 BackupBudget
 
 $verifiedExpenses = Deduplicate $accountHistory $existingBudget
+
+$verifiedExpenses = DetermineMethod $verifiedExpenses
+
+$verifiedExpenses = ArbitraryExceptions $verifiedExpenses
 
 ExportExpenses $verifiedExpenses $outputPath
 
