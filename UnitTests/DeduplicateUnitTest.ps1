@@ -1,4 +1,4 @@
-. $PSScriptRoot\Deduplicate.ps1
+. $PSScriptRoot\Modules\Deduplicate.ps1
 
 $accountHistory = Import-Csv $PSScriptRoot/accountHistory.csv
 $existingBudget = Import-Csv $PSScriptRoot/existingBudget.csv
