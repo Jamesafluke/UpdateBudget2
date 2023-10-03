@@ -11,8 +11,10 @@ Write-Host $existingBudget
 
 $verifiedExpenses = Deduplicate $accountHistory $existingBudget
 
-if ($verifiedExpenses.count -eq 6){
-    Write-Host "Count is correct." -ForegroundColor Green
+if ($verifiedExpenses.count -eq 11){
+    Write-Host "Total count is correct." -ForegroundColor Green
+}else{
+    Write-Host "Total count failed" -ForegroundColor Green
 }
 
 
