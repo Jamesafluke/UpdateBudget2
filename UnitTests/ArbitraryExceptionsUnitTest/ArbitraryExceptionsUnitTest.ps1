@@ -11,6 +11,18 @@ function Main{
     }else{
         Write-Host "TestArbitraryExceptionAmericanFunds succeeded" -ForegroundColor Green
     }
+    
+    if(!(TestArbitraryExceptionHOA $verifiedExpenses)){
+        Write-Host "TestArbitraryExceptionHOA failed." -ForegroundColor Red
+    }else{
+        Write-Host "TestArbitraryExceptionHOA succeeded" -ForegroundColor Green
+    }
+    
+    if(!(TestArbitraryExceptionWalmart $verifiedExpenses)){
+        Write-Host "TestArbitraryExceptionWalmart failed." -ForegroundColor Red
+    }else{
+        Write-Host "TestArbitraryExceptionWalmart succeeded" -ForegroundColor Green
+    }
 }
 
 
