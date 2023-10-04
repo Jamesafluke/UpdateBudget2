@@ -7,6 +7,7 @@
 . "$PSScriptRoot\Modules\ImportExistingBudget.ps1"
 . "$PSScriptRoot\Modules\BackupBudget.ps1"
 . "$PSScriptRoot\Modules\Deduplicate.ps1"
+. "$PSScriptRoot\Modules\DetermineMethod.ps1"
 . "$PSScriptRoot\Modules\ArbitraryExceptions.ps1"
 . "$PSScriptRoot\Modules\ExportExpenses.ps1"
 . "$PSScriptRoot\Modules\DeleteAccountHistoryFiles.ps1"

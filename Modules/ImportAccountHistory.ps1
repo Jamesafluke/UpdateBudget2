@@ -31,6 +31,12 @@ function ImportAccountHistory{
             return $true
         }
     }
+    if($month.tostring().Length -eq 1){
+        #Need to add a zero to the beginning of the date. eg. 09/10/2023
+        foreach($entry in $filteredAccountHistory){
+            $entry."Post Date" = "0" + $entry."Post Date"
+        }
+    }
     Write-Host "After trimming extraneous months and years there are " -NoNewLine; Write-Host $filteredAccountHistory.Count -NoNewLine -ForegroundColor Green; Write-Host " account history items in " -NoNewLine; Write-Host (GetFullMonthName $month) $year -NoNewLine -ForegroundColor Green; Write-Host "."
     return $filteredAccountHistory
 }

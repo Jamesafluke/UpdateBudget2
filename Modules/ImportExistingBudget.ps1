@@ -3,7 +3,7 @@
 
 function ImportExistingBudget{
     param(
-        $month #for $abbMonthName
+        $month #for $abbMonthName for worksheet of xlsx.
     )
 
     #Determine csv or xlsx.   
@@ -26,10 +26,10 @@ function ImportExistingBudget{
         $abbMonthName = $abbMonths[$month -1]
         
         #Determine path.
-        $GetXlsxPath = (GetXlsxPath)
+        $xlsxPath = (GetXlsxPath)
         Write-Host "Importing budget data from 2023Budget.xlsx"
         try{
-            $rawXlsxData = Import-Excel $GetXlsxPath -WorksheetName $abbMonthName -NoHeader -ImportColumns @(19,20,21,22,23,24) -startrow 8 -endrow 200
+            $rawXlsxData = Import-Excel $xlsxPath -WorksheetName $abbMonthName -NoHeader -ImportColumns @(19,20,21,22,23,24) -startrow 8 -endrow 200
         }catch{
             Write-Host "Importing Excel data failed. Make sure it's closed."
             exit
@@ -50,6 +50,7 @@ function ImportExistingBudget{
             $refinedXlsxData += $nonBlankExpense
             }
         }
+        Write-Host $refinedXlsxData
+        return $refinedXlsxData
     }
-    return $refinedXlsxData
 }

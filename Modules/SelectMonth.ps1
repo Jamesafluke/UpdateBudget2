@@ -1,7 +1,5 @@
 . "$PSScriptRoot\GetFullMonthName.ps1"
 
-
-
 function SelectMonth{
 
     $userInput = Read-Host "Use current month? y/n"
