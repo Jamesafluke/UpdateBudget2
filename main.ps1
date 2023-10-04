@@ -14,7 +14,7 @@
 . "$PSScriptRoot\Modules\OpenOutput.ps1"
 
 
-$outputPath = "C:\PersonalMyCode\UpdateBudget\output.csv"
+$outputPath = "$PSScriptRoot\output.csv"
 
 Write-Host "Welcome to Budginator!" -ForegroundColor Green
 

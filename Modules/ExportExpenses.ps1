@@ -7,6 +7,7 @@ function ExportExpenses{
     while($true){
         try{
             $verifiedExpenses | Export-Csv $outputPath -NoTypeInformation
+            Write-Host "Export successful."
             break
         }
         catch{

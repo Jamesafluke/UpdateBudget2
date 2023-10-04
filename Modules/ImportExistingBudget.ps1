@@ -28,11 +28,17 @@ function ImportExistingBudget{
         #Determine path.
         $xlsxPath = (GetXlsxPath)
         Write-Host "Importing budget data from 2023Budget.xlsx"
-        try{
-            $rawXlsxData = Import-Excel $xlsxPath -WorksheetName $abbMonthName -NoHeader -ImportColumns @(19,20,21,22,23,24) -startrow 8 -endrow 200
-        }catch{
-            Write-Host "Importing Excel data failed. Make sure it's closed."
-            exit
+        while($true){
+            try{
+                $rawXlsxData = Import-Excel $xlsxPath -WorksheetName $abbMonthName -NoHeader -ImportColumns @(19,20,21,22,23,24) -startrow 8 -endrow 200
+                break
+            }catch{
+                Write-Host "Importing Excel data failed. Make sure it's closed."
+                $userInput = Read-Host "Importing Excel data failed. Make sure it's closed. Try again? y/n"
+                if($userInput -ne "y"){
+                    exit
+                }
+            }
         }
 
         #Remove blank items. Add to refined data.
@@ -50,7 +56,12 @@ function ImportExistingBudget{
             $refinedXlsxData += $nonBlankExpense
             }
         }
-        Write-Host $refinedXlsxData
+        $i = 1
+        foreach($item in $refinedXlsxData){
+            write-Host "$i : " -NoNewLine
+            Write-Host $item
+            $i ++
+        }
         return $refinedXlsxData
     }
 }
