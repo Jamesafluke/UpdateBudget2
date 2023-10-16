@@ -17,6 +17,8 @@
 $outputPath = "$PSScriptRoot\output.csv"
 
 Write-Host "Welcome to Budginator!" -ForegroundColor Green
+Write-host "Write a function that checks if account history is already sitting in the downloads folder and deleted if needed."
+Write-Host "Write a function that deletes the unneeded categories such as the paycheck or credit card payments."
 
 StartAhk
 

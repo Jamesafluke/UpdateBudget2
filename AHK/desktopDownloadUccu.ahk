@@ -8,7 +8,7 @@
 loginBannerColor := "0x219FB5" ;If login banner is there, it will be this color at this coordinates
 xLoginBanner := 2844
 yLoginBanner := 128
-xSignInButton := 2200
+xSignInButton := 2074
 ySignInButon := 474
 littleBannerColor := "0x001E3C"
 xLittleBanner := 1968
@@ -32,7 +32,7 @@ Sleep 8000
 
 color := PixelGetColor(xLoginBanner, yLoginBanner)
 if(color = loginBannerColor){ ;If login page has banner
-    Click xSignInButton, ySignInButon + 144
+    Click xSignInButton, ySignInButon + 118
 }else{ ;If no banner
     Click xSignInButton, ySignInButon
 }

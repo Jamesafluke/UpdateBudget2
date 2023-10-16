@@ -7,12 +7,13 @@ function ImportExistingBudget{
     )
 
     #Determine csv or xlsx.   
-    $userInput = Read-Host "c for local csv, x for 2023Budget.xlsx"
-    if($userInput -eq "c"){
-        $source = "csv"
-    }elseif($userInput -eq "x"){
-        $source = "xlsx"
-    }
+    # $userInput = Read-Host "c for local csv, x for 2023Budget.xlsx"
+    # if($userInput -eq "c"){
+    #     $source = "csv"
+    # }elseif($userInput -eq "x"){
+    #     $source = "xlsx"
+    # }
+    $source = "xlsx"
 
     if($source -eq "csv"){
         $budgetcsvPath = "C:\PersonalMyCode\UpdateBudget\existingBudgetData.csv"

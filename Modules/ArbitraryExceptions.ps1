@@ -6,6 +6,9 @@ function ArbitraryExceptions {
     # Write-Host $verifiedExpenses
 
     forEach($entry in $verifiedExpenses){
+        if ($entry.Item -eq "Dep Cloud Bee Direct Deposit") {
+            $entry = $null
+        }
         if ($entry.Item -eq "PennyMac") {
             $entry.Description = "Mortgage"
             $entry.Category = "Mortgage"
@@ -36,9 +39,6 @@ function ArbitraryExceptions {
         if ($entry.Item -eq "Fast Gas Convenience Store") {
             $entry.Description = ""
             $entry.Category = ""
-        }
-        if ($entry.Item -eq "Dep Cloud Bee Direct Deposit") {
-            $entry.amount = ""
         }
         if ($entry.Item -eq "Dominion Energy") {
             $entry.Description = "Dominion Energy"
@@ -76,5 +76,16 @@ function ArbitraryExceptions {
         }
 
     }
+    #Remove some entries.
+    # for ($i = $verifiedExpenses.Count - 1; $i -ge 0; $i--) {
+    #     if ($verifiedExpenses[$i].Item -eq "Fluckiger") {
+    #         $verifiedExpenses.RemoveAt($i)
+    #     }
+    # }
+    # $verifiedExpenses = $verifiedExpenses | Where-Object {
+    #     $entry.Description = "Fluckiger"
+    # }
+
+
     return $verifiedExpenses
 }
