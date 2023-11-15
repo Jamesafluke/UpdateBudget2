@@ -4,6 +4,7 @@ function ImportAccountHistory{
         $month,
         $accountHistoryPaths
     )
+    
     $accountHistory0 = Import-Csv $accountHistoryPaths[0]
     $accountHistory1 = Import-Csv $accountHistoryPaths[1]
     $combinedCsv = $accountHistory0 + $accountHistory1

@@ -27,8 +27,8 @@ function Deduplicate{
         if ($null -eq $duplicateEntry){ #If it isn't a duplicate entry, add it.
             # Add date, item, and amount. ()
             
-            Write-Host "NON-duplicate entry found:"
-            Write-Host $entry
+            # Write-Host "NON-duplicate entry found:"
+            # Write-Host $entry
 
             $newExpense = [PSCustomObject]@{
                 Date = $entry."Post Date"
@@ -40,11 +40,11 @@ function Deduplicate{
             }
             $verifiedExpenses += $newExpense
         }else{ #Is a duplicate entry.
-            Write-Host "Duplicate entry found" -ForegroundColor Yellow
-            Write-Host $entry
+            # Write-Host "Duplicate entry found" -ForegroundColor Yellow
+            # Write-Host $entry
             $duplicateCount ++
         }
     }        
-    Write-Host $duplicateCount -NoNewLine -ForegroundColor Green; Write-Host " duplicates. There are " -NoNewLine; Write-Host $verifiedExpenses.count -NoNewLine -ForegroundColor Green; Write-Host " expenses ready to be exported."
+    Write-Host $duplicateCount -NoNewLine -ForegroundColor Green; Write-Host " duplicates. There are " -NoNewLine; Write-Host $verifiedExpenses.count -NoNewLine -ForegroundColor Green; Write-Host " expenses before arbitrary exceptions."
     return $verifiedExpenses
 }

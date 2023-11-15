@@ -3,7 +3,8 @@ function ExportExpenses{
         $verifiedExpenses,
         $outputPath
     )
-    Write-Host "Exporting!"
+    $expenseCount = $verifiedExpenses.Count
+    Write-Host "Exporting " -NoNewLine; Write-Host $expenseCount -NoNewLine -ForegroundColor Green; Write-Host " expenses." 
     while($true){
         try{
             $verifiedExpenses | Export-Csv $outputPath -NoTypeInformation

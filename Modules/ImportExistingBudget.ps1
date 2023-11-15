@@ -57,12 +57,12 @@ function ImportExistingBudget{
             $refinedXlsxData += $nonBlankExpense
             }
         }
-        $i = 1
-        foreach($item in $refinedXlsxData){
-            write-Host "$i : " -NoNewLine
-            Write-Host $item
-            $i ++
-        }
+        # $i = 1
+        # foreach($item in $refinedXlsxData){
+        #     # write-Host "$i : " -NoNewLine
+        #     # Write-Host $item
+        #     $i ++
+        # }
         return $refinedXlsxData
     }
 }

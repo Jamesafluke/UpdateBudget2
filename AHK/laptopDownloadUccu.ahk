@@ -1,13 +1,13 @@
 #SingleInstance force
-
+Esc::ExitApp
 ;Variables
 ;The login page has one type of banner. All the pages after that have a maintenance banner.
 ;Login page banner is y93 to y237. 144 pixels tall. 
 ;Maintenance banner is y162 to y232. 70 pixels tall.
 
-loginBannerColor := "0x08A3B3" ;If login banner is there, it will be this color at this coordinates
-xLoginBanner := 1762
-yLoginBanner := 191
+loginBannerColor := "0x09A3B4" ;If login banner is there, it will be this color at this coordinates
+xLoginBanner := 1767
+yLoginBanner := 153
 xSignInButton := 1458
 ySignInButon := 451
 littleBannerColor := "0x001E3C"
@@ -27,15 +27,20 @@ xBack := 507
 yBack := 194
 
 
-Run "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
+; Run 'C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe' "https://uccu.com"
+Run "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe https://uccu.com --new-window"
+; Run "msedge.exe www.google.com/ --new-window"
 Sleep 8000
 
-color := PixelGetColor(xLoginBanner, yLoginBanner)
-if(color = loginBannerColor){ ;If login page has banner
-    Click xSignInButton, ySignInButon + 144
-}else{ ;If no banner
-    Click xSignInButton, ySignInButon
-}
+; Banner detection.
+; color := PixelGetColor(xLoginBanner, yLoginBanner)
+; if(color = loginBannerColor){ ;If login page has banner
+;     ToolTip "Banner detected."
+;     Click xSignInButton, ySignInButon + 144
+; }else{ ;If no banner
+;     Click xSignInButton, ySignInButon
+; }
+Send "{Enter}"
 Sleep 9000
 
 
