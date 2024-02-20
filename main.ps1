@@ -1,4 +1,5 @@
 # . "$PSScriptRoot\Modules\*.ps1" #Doesn't work.
+. "$PSScriptRoot\Modules\LogMessage.ps1"
 . "$PSScriptRoot\Modules\SetAccountHistoryPaths.ps1"
 # . "$PSScriptRoot\Modules\CheckExistingAccountHistory.ps1"
 . "$PSScriptRoot\Modules\StartAhk.ps1"
@@ -14,42 +15,53 @@
 . "$PSScriptRoot\Modules\ExportExpenses.ps1"
 . "$PSScriptRoot\Modules\DeleteAccountHistoryFiles.ps1"
 . "$PSScriptRoot\Modules\OpenOutput.ps1"
+. "$PSScriptRoot\Modules\OpenXlsx.ps1"
 
 
 $outputPath = "$PSScriptRoot\output.csv"
 
-Write-Host "Welcome to Budginator!" -ForegroundColor Green
-Write-Host "Write a function that deletes the unneeded categories such as the paycheck or credit card payments."
-Write-Host "Created but didn't develop this yet."
+function Main {
 
-$accountHistoryPaths = SetAccountHistoryPaths
+    LogMessage $MyInvocation.MyCommand.Name "Welcome to Budginator!" -ForegroundColor Green
+    LogMessage $MyInvocation.MyCommand.Name "Backlog: Write a function that imports the data directly into the budget instead of to output.csv"
+    LogMessage $MyInvocation.MyCommand.Name "Backlog: Include an auto LastUpdated field on the budget."
+    LogMessage $MyInvocation.MyCommand.Name "Backlog: Make it laptop/desktop (screen resolution) agnostic. It already is, but the residual code should be removed. But wait, maybe it's not that simple. As long as I'm using OneDrive this will be necessary?"
 
-# CheckExistingAccountHistory $accountHistoryPaths
+    $accountHistoryPaths = SetAccountHistoryPaths
 
-StartAhk
+    # CheckExistingAccountHistory $accountHistoryPaths
 
-$month = SelectMonth
-Write-Host $month
-$year = SelectYear
-Write-Host $year
+    StartAhk
+
+    $month = SelectMonth
+    Write-Host $month
+    $year = SelectYear
+    Write-Host $year
 
 
-$accountHistory = ImportAccountHistory $year $month $accountHistoryPaths
+    $accountHistory = ImportAccountHistory $year $month $accountHistoryPaths
 
-$existingBudget = ImportExistingBudget $month
+    $existingBudget = ImportExistingBudget $month
 
-BackupBudget
+    BackupBudget
 
-$verifiedExpenses = Deduplicate $accountHistory $existingBudget
+    $verifiedExpenses = Deduplicate $accountHistory $existingBudget
 
-$verifiedExpenses = DetermineMethod $verifiedExpenses
+    $verifiedExpenses = DetermineMethod $verifiedExpenses
 
-$verifiedExpenses = ArbitraryExceptionsModify $verifiedExpenses
+    $verifiedExpenses = ArbitraryExceptionsModify $verifiedExpenses
 
-$verifiedExpenses = ArbitraryExceptionsRemove $verifiedExpenses
+    $verifiedExpenses = ArbitraryExceptionsRemove $verifiedExpenses
 
-ExportExpenses $verifiedExpenses $outputPath
+    ExportExpenses $verifiedExpenses $outputPath
 
-DeleteAccountHistoryFiles $accountHistoryPaths
+    DeleteAccountHistoryFiles $accountHistoryPaths
 
-OpenOutput $outputPath
+    OpenOutput $outputPath
+
+    OpenXlsx $(GetXlsxPath)
+
+}
+
+
+Main

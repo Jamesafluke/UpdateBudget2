@@ -28,13 +28,14 @@ function ImportExistingBudget{
         
         #Determine path.
         $xlsxPath = (GetXlsxPath)
-        Write-Host "Importing budget data from 2023Budget.xlsx"
+        Write-Host "Importing budget data from 2024Budget.xlsx"
+        Write-Host "abbmonthName is $abbMonthName"
+        Write-Host $xlsxPath
         while($true){
             try{
                 $rawXlsxData = Import-Excel $xlsxPath -WorksheetName $abbMonthName -NoHeader -ImportColumns @(19,20,21,22,23,24) -startrow 8 -endrow 200
                 break
             }catch{
-                Write-Host "Importing Excel data failed. Make sure it's closed."
                 $userInput = Read-Host "Importing Excel data failed. Make sure it's closed. Try again? y/n"
                 if($userInput -ne "y"){
                     exit

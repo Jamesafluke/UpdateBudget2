@@ -17,7 +17,8 @@ function ImportAccountHistory{
         $entry = $_
         if($entry.Status -eq "Pending"){
             Write-Host "Found a pending $entry"
-            $pendingItems += $entry
+            Write-Host "I commented out the line that bugs."
+            # $pendingItems += $entry
         }else{
 
             $postDate = Get-Date $entry."Post Date"

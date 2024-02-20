@@ -1,5 +1,4 @@
 function StartAhk{
-
     #Check for existing files.
     $path0 = ""
     $path1 = ""

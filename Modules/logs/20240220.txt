@@ -1,0 +1,67 @@
+20M2y24 14:03:39:996 PM - Testing logging!
+20M2y24 14:05:24:014 PM - Testing logging!
+20M2y24 14:07:54:436 PM - Welcome to Budginator!
+20M2y24 14:07:54:439 PM - Improvement: Write a function that imports the data directly into the budget instead of to output.csv
+20M2y24 14:07:54:442 PM - Improvement:Include an auto LastUpdated field on the budget.
+20M2y24 14:07:54:444 PM - Improvement:Make it laptop/desktop (screen resolution) agnostic. It already is, but the residual code should be removed.
+20M2y24 14:08:24:126 PM - Welcome to Budginator!
+20M2y24 14:08:24:131 PM - Improvement: Write a function that imports the data directly into the budget instead of to output.csv
+20M2y24 14:08:24:134 PM - Improvement:Include an auto LastUpdated field on the budget.
+20M2y24 14:08:24:137 PM - Improvement:Make it laptop/desktop (screen resolution) agnostic. It already is, but the residual code should be removed.
+20M2y24 14:10:35:174 PM - Welcome to Budginator!
+20M2y24 14:10:35:177 PM - Improvement: Write a function that imports the data directly into the budget instead of to output.csv
+20M2y24 14:10:35:178 PM - Improvement:Include an auto LastUpdated field on the budget.
+20M2y24 14:10:35:179 PM - Improvement:Make it laptop/desktop (screen resolution) agnostic. It already is, but the residual code should be removed.
+20M2y24 14:11:01:547 PM - Welcome to Budginator!
+20M2y24 14:11:01:549 PM - Improvement: Write a function that imports the data directly into the budget instead of to output.csv
+20M2y24 14:11:01:554 PM - Improvement:Include an auto LastUpdated field on the budget.
+20M2y24 14:11:01:557 PM - Improvement:Make it laptop/desktop (screen resolution) agnostic. It already is, but the residual code should be removed.
+20M2y24 14:12:01:895 PM - Welcome to Budginator!
+20M2y24 14:12:01:899 PM - Improvement: Write a function that imports the data directly into the budget instead of to output.csv
+20M2y24 14:12:01:901 PM - Improvement:Include an auto LastUpdated field on the budget.
+20M2y24 14:12:01:903 PM - Improvement:Make it laptop/desktop (screen resolution) agnostic. It already is, but the residual code should be removed.
+20M2y24 14:12:37:634 PM - Welcome to Budginator!
+20M2y24 14:12:37:635 PM - Improvement: Write a function that imports the data directly into the budget instead of to output.csv
+20M2y24 14:12:37:637 PM - Improvement:Include an auto LastUpdated field on the budget.
+20M2y24 14:12:37:638 PM - Improvement:Make it laptop/desktop (screen resolution) agnostic. It already is, but the residual code should be removed.
+20M2y24 14:13:01:294 PM - Welcome to Budginator!
+20M2y24 14:13:01:296 PM - Improvement: Write a function that imports the data directly into the budget instead of to output.csv
+20M2y24 14:13:01:297 PM - Improvement:Include an auto LastUpdated field on the budget.
+20M2y24 14:13:01:299 PM - Improvement:Make it laptop/desktop (screen resolution) agnostic. It already is, but the residual code should be removed.
+20M2y24 14:13:15:324 PM - Welcome to Budginator!
+20M2y24 14:13:15:326 PM - Improvement: Write a function that imports the data directly into the budget instead of to output.csv
+20M2y24 14:13:15:328 PM - Improvement:Include an auto LastUpdated field on the budget.
+20M2y24 14:13:15:330 PM - Improvement:Make it laptop/desktop (screen resolution) agnostic. It already is, but the residual code should be removed.
+20M2y24 14:13:32:777 PM - Welcome to Budginator!
+20M2y24 14:13:32:778 PM - Improvement: Write a function that imports the data directly into the budget instead of to output.csv
+20M2y24 14:13:32:780 PM - Improvement:Include an auto LastUpdated field on the budget.
+20M2y24 14:13:32:782 PM - Improvement:Make it laptop/desktop (screen resolution) agnostic. It already is, but the residual code should be removed.
+20M2y24 14:15:29:539 PM - Welcome to Budginator!
+20M2y24 14:15:29:540 PM - Improvement: Write a function that imports the data directly into the budget instead of to output.csv
+20M2y24 14:15:29:542 PM - Improvement:Include an auto LastUpdated field on the budget.
+20M2y24 14:15:29:543 PM - Improvement:Make it laptop/desktop (screen resolution) agnostic. It already is, but the residual code should be removed.
+20M2y24 14:15:57:951 PM - Welcome to Budginator!
+20M2y24 14:15:57:953 PM - Improvement: Write a function that imports the data directly into the budget instead of to output.csv
+20M2y24 14:15:57:954 PM - Improvement:Include an auto LastUpdated field on the budget.
+20M2y24 14:15:57:956 PM - Improvement:Make it laptop/desktop (screen resolution) agnostic. It already is, but the residual code should be removed.
+20M2y24 14:16:10:448 PM - Welcome to Budginator!
+20M2y24 14:16:10:449 PM - Improvement: Write a function that imports the data directly into the budget instead of to output.csv
+20M2y24 14:16:10:452 PM - Improvement:Include an auto LastUpdated field on the budget.
+20M2y24 14:16:10:453 PM - Improvement:Make it laptop/desktop (screen resolution) agnostic. It already is, but the residual code should be removed.
+20M2y24 14:18:25:448 PM - Main - Welcome to Budginator!
+20M2y24 14:18:25:451 PM - Main - Backlog: Write a function that imports the data directly into the budget instead of to output.csv
+20M2y24 14:18:25:453 PM - Main - Backlog: Include an auto LastUpdated field on the budget.
+20M2y24 14:18:25:454 PM - Main - Backlog: Make it laptop/desktop (screen resolution) agnostic. It already is, but the residual code should be removed.
+20/02/2024 14:20:55 PM - Main - Welcome to Budginator!
+20/02/2024 14:20:55 PM - Main - Backlog: Write a function that imports the data directly into the budget instead of to output.csv
+20/02/2024 14:20:55 PM - Main - Backlog: Include an auto LastUpdated field on the budget.
+20/02/2024 14:20:55 PM - Main - Backlog: Make it laptop/desktop (screen resolution) agnostic. It already is, but the residual code should be removed.
+20/02/2024 14:28:42 PM - Main - Welcome to Budginator!
+20/02/2024 14:28:42 PM - Main - Backlog: Write a function that imports the data directly into the budget instead of to output.csv
+20/02/2024 14:28:42 PM - Main - Backlog: Include an auto LastUpdated field on the budget.
+20/02/2024 14:28:42 PM - Main - Backlog: Make it laptop/desktop (screen resolution) agnostic. It already is, but the residual code should be removed. But wait, maybe it's not that simple. As long as I'm using OneDrive this will be necessary?
+20/02/2024 14:29:42 PM - Main - Welcome to Budginator!
+20/02/2024 14:29:42 PM - Main - Backlog: Write a function that imports the data directly into the budget instead of to output.csv
+20/02/2024 14:29:42 PM - Main - Backlog: Include an auto LastUpdated field on the budget.
+20/02/2024 14:29:42 PM - Main - Backlog: Make it laptop/desktop (screen resolution) agnostic. It already is, but the residual code should be removed. But wait, maybe it's not that simple. As long as I'm using OneDrive this will be necessary?
+20/02/2024 14:29:42 PM - SetAccountHistoryPaths - Laptop detected.
