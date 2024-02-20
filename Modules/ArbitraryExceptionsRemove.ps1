@@ -25,6 +25,6 @@ function ArbitraryExceptionsRemove {
     }
 
     $numberRemoved = $verifiedExpenses.count - $trimmedExpenses.count
-    Write-Host "Removed " -NoNewLine; Write-Host $numberRemoved -NoNewLine -ForegroundColor Green; Write-Host " arbitrary exceptions."
+    LogMessage $MyInvocation.MyCommand.Name "Removed $numberRemoved arbitrary exceptions."
     return $trimmedExpenses
 }

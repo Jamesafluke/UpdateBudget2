@@ -8,16 +8,16 @@ function ImportAccountHistory{
     $accountHistory0 = Import-Csv $accountHistoryPaths[0]
     $accountHistory1 = Import-Csv $accountHistoryPaths[1]
     $combinedCsv = $accountHistory0 + $accountHistory1
-    Write-Host "$($accountHistory0.Count) items in accountHistory0"
-    Write-Host "$($accountHistory1.Count) items in accountHistory1"
-    Write-Host "$($combinedCsv.Count) total items in account history."
+    LogMessage $MyInvocation.MyCommand.Name "$($accountHistory0.Count) items in accountHistory0"
+    LogMessage $MyInvocation.MyCommand.Name "$($accountHistory1.Count) items in accountHistory1"
+    LogMessage $MyInvocation.MyCommand.Name "$($combinedCsv.Count) total items in account history."
     
     # Filter account history data by selected month and specific condition
     $filteredAccountHistory = $combinedCsv | Where-Object {
         $entry = $_
         if($entry.Status -eq "Pending"){
-            Write-Host "Found a pending $entry"
-            Write-Host "I commented out the line that bugs."
+            LogMessage $MyInvocation.MyCommand.Name "Found a pending $entry"
+            LogMessage $MyInvocation.MyCommand.Name "I commented out the line that bugs."
             # $pendingItems += $entry
         }else{
 
@@ -47,6 +47,6 @@ function ImportAccountHistory{
         }
     }
 
-    Write-Host "After trimming extraneous months and years there are " -NoNewLine; Write-Host $filteredAccountHistory.Count -NoNewLine -ForegroundColor Green; Write-Host " account history items in " -NoNewLine; Write-Host (GetFullMonthName $month) $year -NoNewLine -ForegroundColor Green; Write-Host "."
+    LogMessage $MyInvocation.MyCommand.Name "After trimming extraneous months and years there are $($filteredAccountHistory.Count)."
     return $filteredAccountHistory
 }

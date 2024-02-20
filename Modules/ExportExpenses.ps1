@@ -5,11 +5,11 @@ function ExportExpenses{
     )
     $expenseCount = $verifiedExpenses.Count
     if ($expenseCount -ne 0){
-        Write-Host "Exporting Box" -NoNewLine; Write-Host $expenseCount -NoNewLine -ForegroundColor Green; Write-Host " expenses." 
+        LogMessage $MyInvocation.MyCommand.Name "Exporting $expenseCount expenses." 
         while($true){
             try{
                 $verifiedExpenses | Export-Csv $outputPath -NoTypeInformation
-                Write-Host "Export successful."
+                LogMessage $MyInvocation.MyCommand.Name "Export successful."
                 break
             }
             catch{
@@ -20,6 +20,6 @@ function ExportExpenses{
             }
         }
     }else{
-        Write-Host "No expenses to export." -Foregroundcolor Green
+        LogMessage $MyInvocation.MyCommand.Name "No expenses to export." -Foregroundcolor Green
     }
 }

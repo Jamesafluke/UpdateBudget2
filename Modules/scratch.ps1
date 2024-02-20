@@ -5,4 +5,4 @@ $abbMonthName = "Jan"
 
 $rawXlsxData = Import-Excel $xlsxPath -WorksheetName $abbMonthName -NoHeader -ImportColumns @(19,20,21,22,23,24) -startrow 8 -endrow 200
 
-Write-Host $rawXlsxData
+LogMessage $MyInvocation.MyCommand.Name $rawXlsxData

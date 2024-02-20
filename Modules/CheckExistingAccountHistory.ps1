@@ -16,20 +16,20 @@ function CheckExistingAccountHistory{
     if($file0Exists -and $file1Exists){
         $userInput = Read-Host "Found two existing account history files. Delete them? y/n"
         if($userInput = 'y'){
-            Write-Host "Deleting $accountHistoryPaths[0] and $accountHistoryPaths[1]"
+            LogMessage $MyInvocation.MyCommand.Name "Deleting $accountHistoryPaths[0] and $accountHistoryPaths[1]"
             Remove-ItemSafely $accountHistoryPaths[0]
             Remove-ItemSafely $accountHistoryPaths[1]
         }
     }elseif($file0Exists){
         $userInput = Read-Host "Found one existing account history file. Delete it? y/n"
         if($userInput = 'y'){
-            Write-Host "Deleting $accountHistoryPaths[0]"
+            LogMessage $MyInvocation.MyCommand.Name "Deleting $accountHistoryPaths[0]"
             Remove-ItemSafely $accountHistoryPaths[0]
         }        
     }elseif($file1Exists){
         $userInput = Read-Host "Found one existing account history file. Delete it? y/n"
         if($userInput = 'y'){
-            Write-Host "Deleting $accountHistoryPaths[1]"
+            LogMessage $MyInvocation.MyCommand.Name "Deleting $accountHistoryPaths[1]"
             Remove-ItemSafely $accountHistoryPaths[1]
         }        
     }

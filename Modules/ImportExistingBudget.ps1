@@ -17,7 +17,7 @@ function ImportExistingBudget{
 
     if($source -eq "csv"){
         $budgetcsvPath = "C:\PersonalMyCode\UpdateBudget\existingBudgetData.csv"
-        Write-Host "Importing budget data from the local csv."
+        LogMessage $MyInvocation.MyCommand.Name "Importing budget data from the local csv."
         return Import-Csv $budgetcsvPath  
 
     }elseif($source -eq "xlsx"){
@@ -28,9 +28,9 @@ function ImportExistingBudget{
         
         #Determine path.
         $xlsxPath = (GetXlsxPath)
-        Write-Host "Importing budget data from 2024Budget.xlsx"
-        Write-Host "abbmonthName is $abbMonthName"
-        Write-Host $xlsxPath
+        LogMessage $MyInvocation.MyCommand.Name "Importing budget data from 2024Budget.xlsx"
+        LogMessage $MyInvocation.MyCommand.Name "abbmonthName is $abbMonthName"
+        LogMessage $MyInvocation.MyCommand.Name "xlsx path is: $xlsxPath"
         while($true){
             try{
                 $rawXlsxData = Import-Excel $xlsxPath -WorksheetName $abbMonthName -NoHeader -ImportColumns @(19,20,21,22,23,24) -startrow 8 -endrow 200
@@ -60,8 +60,8 @@ function ImportExistingBudget{
         }
         # $i = 1
         # foreach($item in $refinedXlsxData){
-        #     # write-Host "$i : " -NoNewLine
-        #     # Write-Host $item
+        #     # LogMessage $MyInvocation.MyCommand.Name "$i : " -NoNewLine
+        #     # LogMessage $MyInvocation.MyCommand.Name $item
         #     $i ++
         # }
         return $refinedXlsxData

@@ -8,7 +8,7 @@ function SelectMonth{
         $selectedMonth = Read-Host "Enter a number between 1 and 12 for the desired month"
     }
     
-    Write-Host "Selected month is " -NoNewline; Write-Host (GetFullMonthName $month) -ForegroundColor Green
+    LogMessage $MyInvocation.MyCommand.Name "Selected month is " -NoNewline; LogMessage $MyInvocation.MyCommand.Name (GetFullMonthName $month) -ForegroundColor Green
     
     return [int]$selectedMonth
 }

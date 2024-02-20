@@ -34,9 +34,9 @@ function Main {
     StartAhk
 
     $month = SelectMonth
-    Write-Host $month
+    # LogMessage $MyInvocation.MyCommand.Name $month
     $year = SelectYear
-    Write-Host $year
+    # LogMessage $MyInvocation.MyCommand.Name $year
 
 
     $accountHistory = ImportAccountHistory $year $month $accountHistoryPaths
