@@ -43,9 +43,4 @@ jobs:
           ls
           pwsh ./UnitTests/ArbitraryExceptionsModifyUnitTest/ArbitraryExceptionsModifyUnitTest.ps1
 
-      - name: Deletemeunittest
-        run: |
-          pwsh ./deleteme.ps1
-
-
 
