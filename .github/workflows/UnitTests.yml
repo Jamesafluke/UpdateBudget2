@@ -41,7 +41,7 @@ jobs:
         run: |
           pwd
           ls
-          pwsh ./ArbitraryExceptionsUnitTest/ArbitraryExceptionsUnitTest.ps1
+          pwsh ./UnitTests/ArbitraryExceptionsUnitTest/ArbitraryExceptionsUnitTest.ps1
 
 
 
