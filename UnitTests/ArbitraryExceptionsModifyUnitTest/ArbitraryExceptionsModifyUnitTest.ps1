@@ -1,5 +1,6 @@
 pwd
-. "/home/runner/work/UpdateBudget2/UpdateBudget2/Modules/ArbitraryExceptionsModify.ps1"
+# . "/home/runner/work/UpdateBudget2/UpdateBudget2/Modules/ArbitraryExceptionsModify.ps1"
+. "/home/runner/work/UpdateBudget2/UpdateBudget2/deleteme.ps1"
 
 
 function Main{
