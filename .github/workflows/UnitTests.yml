@@ -38,9 +38,8 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: ArbitraryExceptionsModifyUnitTest
+        shell: pwsh
         run: |
-          pwd
-          ls
-          pwsh ./UnitTests/ArbitraryExceptionsModifyUnitTest/ArbitraryExceptionsModifyUnitTest.ps1
+          ./UnitTests/ArbitraryExceptionsModifyUnitTest/ArbitraryExceptionsModifyUnitTest.ps1
 
 
