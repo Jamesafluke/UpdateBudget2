@@ -49,7 +49,6 @@ jobs:
           pwsh
           echo cd
           cd ./UnitTests/ArbitraryExceptionsUnitTest
-          pwsh Import-Module /home/runner/work/UpdateBudget2/UpdateBudget2/UnitTests/ArbitraryExceptionsUnitTest
           echo Running ArbitraryExceptionsUnitTest.ps1
           pwsh ./ArbitraryExceptionsUnitTest.ps1
           echo cd
