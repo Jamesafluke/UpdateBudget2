@@ -1,4 +1,4 @@
-. /Modules/ArbitraryExceptionsModify.ps1
+. ./Modules/ArbitraryExceptionsModify.ps1
 
 function Main{
 
