@@ -48,6 +48,7 @@ jobs:
         run: |
           pwsh
           cd ./UnitTests/ArbitraryExceptionsUnitTest
+          echo "Script root:"
           pwsh $PSScriptRoot
           pwsh ./ArbitraryExceptionsUnitTest.ps1
           cd ../..
