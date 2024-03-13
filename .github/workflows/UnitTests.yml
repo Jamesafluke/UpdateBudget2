@@ -46,7 +46,7 @@ jobs:
       - name: ArbitraryExceptionsUnitTest
         run: |
           cd ./UnitTests/ArbitraryExceptionsUnitTest
-          pwsh ./UnitTests/ArbitraryExceptionsUnitTest/ArbitraryExceptionsUnitTest.ps1
+          pwsh ./ArbitraryExceptionsUnitTest.ps1
           cd ../..
 
 
