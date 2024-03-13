@@ -5,7 +5,7 @@ function Main{
 
     Write-Host "Inside ArbitraryExceptionsUnitTest.ps1 now!"
 
-    Import-Module $PSScriptRoot\..\Modules\ArbitraryExceptions.ps1
+    Import-Module $PSScriptRoot\..\Modules\ArbitraryExceptionsModify.ps1
 
     $verifiedExpenses = Import-Csv $PSScriptRoot/UnitTests/ArbitraryExceptions/verifiedExpenses.csv
 
