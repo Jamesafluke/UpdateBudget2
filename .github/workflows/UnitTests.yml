@@ -46,12 +46,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: ArbitraryExceptionsUnitTest
         run: |
-          pwsh
-          echo cd
-          cd ./UnitTests/ArbitraryExceptionsUnitTest
-          echo Running ArbitraryExceptionsUnitTest.ps1
-          pwsh ./ArbitraryExceptionsUnitTest.ps1
-          echo cd
-          cd ../..
+          pwsh ./ArbitraryExceptionsUnitTest/ArbitraryExceptionsUnitTest.ps1
+
 
 
