@@ -37,11 +37,11 @@ jobs:
       #     sudo apt-get install -y powershell
 
       # Runs a single command using the runners shell
-      - name: ArbitraryExceptionsUnitTest
+      - name: ArbitraryExceptionsModifyUnitTest
         run: |
           pwd
           ls
-          pwsh ./UnitTests/ArbitraryExceptionsUnitTest/ArbitraryExceptionsUnitTest.ps1
+          pwsh ./UnitTests/ArbitraryExceptionsUnitTest/ArbitraryExceptionsModifyUnitTest.ps1
 
 
 
