@@ -22,10 +22,11 @@ $outputPath = "$PSScriptRoot\output.csv"
 
 function Main {
 
-    LogMessage $MyInvocation.MyCommand.Name "Welcome to Budginator!" -ForegroundColor Green
+    LogMessage $MyInvocation.MyCommand.Name "Welcome to Budginator!"
     LogMessage $MyInvocation.MyCommand.Name "Backlog: Write a function that imports the data directly into the budget instead of to output.csv"
     LogMessage $MyInvocation.MyCommand.Name "Backlog: Include an auto LastUpdated field on the budget."
-    LogMessage $MyInvocation.MyCommand.Name "Backlog: Make it laptop/desktop (screen resolution) agnostic. It already is, but the residual code should be removed. But wait, maybe it's not that simple. As long as I'm using OneDrive this will be necessary?"
+
+    # LogMessage $MyInvocation.MyCommand.Name "Backlog: Make it laptop/desktop (screen resolution) agnostic. It already is, but the residual code should be removed. But wait, maybe it's not that simple. As long as I'm using OneDrive this will be necessary?"
 
     $accountHistoryPaths = SetAccountHistoryPaths
 

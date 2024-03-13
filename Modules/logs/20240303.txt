@@ -1,0 +1,59 @@
+03/03/2024 20:28:36 PM - Main - Note: test mode is on
+03/03/2024 20:28:36 PM - Main - Welcome to Budginator!
+03/03/2024 20:28:36 PM - Main - Backlog: Write a function that imports the data directly into the budget instead of to output.csv
+03/03/2024 20:28:36 PM - Main - Backlog: Include an auto LastUpdated field on the budget.
+03/03/2024 20:28:36 PM - SetAccountHistoryPaths - Laptop detected.
+03/03/2024 20:28:36 PM - StartAhk - StartAhk TESTMODE ON
+03/03/2024 20:28:36 PM - SelectMonth - TESTMODE ON
+03/03/2024 20:28:36 PM - SelectMonth - Selected month is December
+03/03/2024 20:28:36 PM - ImportAccountHistory - 2418 items in accountHistory0
+03/03/2024 20:28:36 PM - ImportAccountHistory - 1232 items in accountHistory1
+03/03/2024 20:28:36 PM - ImportAccountHistory - 3650 total items in account history.
+03/03/2024 20:28:36 PM - ImportAccountHistory - After trimming extraneous months and years there are 0.
+03/03/2024 20:28:36 PM - ImportExistingBudget - Importing budget data from 2024Budget.xlsx
+03/03/2024 20:28:36 PM - ImportExistingBudget - abbmonthName is Mar
+03/03/2024 20:28:36 PM - ImportExistingBudget - xlsx path is: C:\Users\jfluckiger\OneDrive\Budget\2024Budget.xlsx
+03/03/2024 20:29:35 PM - Main - Welcome to Budginator!
+03/03/2024 20:29:35 PM - Main - Backlog: Write a function that imports the data directly into the budget instead of to output.csv
+03/03/2024 20:29:35 PM - Main - Backlog: Include an auto LastUpdated field on the budget.
+03/03/2024 20:29:35 PM - SetAccountHistoryPaths - Laptop detected.
+03/03/2024 20:29:38 PM - StartAhk - Laptop AHK
+03/03/2024 20:29:38 PM - SelectMonth - TESTMODE ON
+03/03/2024 20:29:38 PM - SelectMonth - Selected month is December
+03/03/2024 20:29:38 PM - ImportAccountHistory - 2418 items in accountHistory0
+03/03/2024 20:29:38 PM - ImportAccountHistory - 1232 items in accountHistory1
+03/03/2024 20:29:38 PM - ImportAccountHistory - 3650 total items in account history.
+03/03/2024 20:29:38 PM - ImportAccountHistory - After trimming extraneous months and years there are 0.
+03/03/2024 20:29:38 PM - ImportExistingBudget - Importing budget data from 2024Budget.xlsx
+03/03/2024 20:29:38 PM - ImportExistingBudget - abbmonthName is Mar
+03/03/2024 20:29:38 PM - ImportExistingBudget - xlsx path is: C:\Users\jfluckiger\OneDrive\Budget\2024Budget.xlsx
+03/03/2024 20:29:38 PM - Deduplicate - There are 0 items in the existing budget.
+03/03/2024 20:29:38 PM - Deduplicate - There are 0 duplicates.
+03/03/2024 20:29:38 PM - Deduplicate - There are 0 expenses before arbitrary exceptions.
+03/03/2024 20:29:38 PM - ArbitraryExceptionsRemove - Removed 0 arbitrary exceptions.
+03/03/2024 20:29:38 PM - ExportExpenses - No expenses to export.
+03/03/2024 20:31:47 PM - Main - Welcome to Budginator!
+03/03/2024 20:31:47 PM - Main - Backlog: Write a function that imports the data directly into the budget instead of to output.csv
+03/03/2024 20:31:47 PM - Main - Backlog: Include an auto LastUpdated field on the budget.
+03/03/2024 20:31:47 PM - SetAccountHistoryPaths - Laptop detected.
+03/03/2024 20:31:51 PM - SelectMonth - Selected month is December
+03/03/2024 20:31:51 PM - ImportAccountHistory - 2445 items in accountHistory0
+03/03/2024 20:31:51 PM - ImportAccountHistory - 1243 items in accountHistory1
+03/03/2024 20:31:52 PM - ImportAccountHistory - 3688 total items in account history.
+03/03/2024 20:31:52 PM -  - Found a pending @{Account Number=750501095729; Post Date=//; Check=; Description=PENNYMAC  - CASH; Debit=1247.79; Credit=; Status=Pending; Balance=; Classification=}
+03/03/2024 20:31:52 PM -  - I commented out the line that bugs.
+03/03/2024 20:31:52 PM -  - Found a pending @{Account Number=750501095729; Post Date=//; Check=; Description=PAYSON CITY  - DEBITS; Debit=244.00; Credit=; Status=Pending; Balance=; Classification=}
+03/03/2024 20:31:52 PM -  - I commented out the line that bugs.
+03/03/2024 20:31:52 PM -  - Found a pending @{Account Number=750501095729; Post Date=//; Check=; Description=Dominion Energy  CM-APAY 0000004944 - QGC; Debit=60.55; Credit=; Status=Pending; Balance=; Classification=}
+03/03/2024 20:31:52 PM -  - I commented out the line that bugs.
+03/03/2024 20:31:52 PM - ImportAccountHistory - After trimming extraneous months and years there are 85.
+03/03/2024 20:31:52 PM - ImportExistingBudget - Importing budget data from 2024Budget.xlsx
+03/03/2024 20:31:52 PM - ImportExistingBudget - abbmonthName is Feb
+03/03/2024 20:31:52 PM - ImportExistingBudget - xlsx path is: C:\Users\jfluckiger\OneDrive\Budget\2024Budget.xlsx
+03/03/2024 20:31:52 PM - Deduplicate - There are 55 items in the existing budget.
+03/03/2024 20:31:52 PM - Deduplicate - There are 53 duplicates.
+03/03/2024 20:31:52 PM - Deduplicate - There are 32 expenses before arbitrary exceptions.
+03/03/2024 20:31:52 PM - ArbitraryExceptionsRemove - Removed 5 arbitrary exceptions.
+03/03/2024 20:31:52 PM - ExportExpenses - Exporting 27 expenses to xlsx.
+03/03/2024 20:31:52 PM - ExportExpenses - Export to csv successful.
+03/03/2024 20:31:56 PM - DeleteAccountHistoryFiles - Deleting C:\Users\jfluckiger\Downloads\AccountHistory.csv C:\Users\jfluckiger\Downloads\AccountHistory (1).csv[0] and C:\Users\jfluckiger\Downloads\AccountHistory.csv C:\Users\jfluckiger\Downloads\AccountHistory (1).csv[1]

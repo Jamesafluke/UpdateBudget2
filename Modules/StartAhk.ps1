@@ -1,4 +1,6 @@
 function StartAhk{
+    $testMode = $false #Testmode skips the question to download new account history. Assumes they are already downloaded.
+    
     #Check for existing files.
     $path0 = ""
     $path1 = ""
@@ -22,12 +24,14 @@ function StartAhk{
     }
     
 
-    
+    if($testMode){
 
+        LogMessage $MyInvocation.MyCommand.Name "StartAhk TESTMODE ON"
+        $userInput = "n"
+    }else{ #testMode off.
+        $userInput = Read-Host "Download account history? y/n"
+    }
 
-
-
-    $userInput = Read-Host "Download account history? y/n"
     if($userInput -eq "y"){
         if($env:computername -eq "PC_JFLUCKIGER"){
             LogMessage $MyInvocation.MyCommand.Name "Laptop AHK"

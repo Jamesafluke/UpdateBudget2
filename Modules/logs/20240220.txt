@@ -266,3 +266,173 @@
 20/02/2024 14:46:53 PM - ArbitraryExceptionsRemove - Removed 3 arbitrary exceptions.
 20/02/2024 14:46:53 PM - ExportExpenses - Exporting 30 expenses.
 20/02/2024 14:46:53 PM - ExportExpenses - Export successful.
+20/02/2024 15:35:06 PM - Main - Welcome to Budginator!
+20/02/2024 15:35:06 PM - Main - Backlog: Write a function that imports the data directly into the budget instead of to output.csv
+20/02/2024 15:35:06 PM - Main - Backlog: Include an auto LastUpdated field on the budget.
+20/02/2024 15:35:06 PM - SetAccountHistoryPaths - Laptop detected.
+20/02/2024 15:35:10 PM - SelectMonth - Selected month is 
+20/02/2024 15:35:10 PM - SelectMonth - February
+20/02/2024 15:35:10 PM - ImportAccountHistory - 2418 items in accountHistory0
+20/02/2024 15:35:10 PM - ImportAccountHistory - 1232 items in accountHistory1
+20/02/2024 15:35:10 PM - ImportAccountHistory - 3650 total items in account history.
+20/02/2024 15:35:10 PM - ImportAccountHistory - After trimming extraneous months and years there are 58.
+20/02/2024 15:35:10 PM - ImportExistingBudget - Importing budget data from 2024Budget.xlsx
+20/02/2024 15:35:10 PM - ImportExistingBudget - abbmonthName is Feb
+20/02/2024 15:35:10 PM - ImportExistingBudget - xlsx path is: C:\Users\jfluckiger\OneDrive\Budget\2024Budget.xlsx
+20/02/2024 15:35:10 PM - Deduplicate - There are 25 items in the existing budget.
+20/02/2024 15:35:10 PM - Deduplicate - There are 25 duplicates.
+20/02/2024 15:35:10 PM - Deduplicate - There are 33 expenses before arbitrary exceptions.
+20/02/2024 15:35:10 PM - ArbitraryExceptionsRemove - Removed 3 arbitrary exceptions.
+20/02/2024 15:35:10 PM - ExportExpenses - Exporting 30 expenses.
+20/02/2024 15:35:10 PM - ExportExpenses - Export to csv successful.
+20/02/2024 15:35:30 PM - Main - Welcome to Budginator!
+20/02/2024 15:35:30 PM - Main - Backlog: Write a function that imports the data directly into the budget instead of to output.csv
+20/02/2024 15:35:30 PM - Main - Backlog: Include an auto LastUpdated field on the budget.
+20/02/2024 15:35:30 PM - SetAccountHistoryPaths - Laptop detected.
+20/02/2024 15:35:33 PM - SelectMonth - Selected month is 
+20/02/2024 15:35:33 PM - SelectMonth - February
+20/02/2024 15:35:33 PM - ImportAccountHistory - 2418 items in accountHistory0
+20/02/2024 15:35:33 PM - ImportAccountHistory - 1232 items in accountHistory1
+20/02/2024 15:35:33 PM - ImportAccountHistory - 3650 total items in account history.
+20/02/2024 15:35:33 PM - ImportAccountHistory - After trimming extraneous months and years there are 58.
+20/02/2024 15:35:33 PM - ImportExistingBudget - Importing budget data from 2024Budget.xlsx
+20/02/2024 15:35:33 PM - ImportExistingBudget - abbmonthName is Feb
+20/02/2024 15:35:33 PM - ImportExistingBudget - xlsx path is: C:\Users\jfluckiger\OneDrive\Budget\2024Budget.xlsx
+20/02/2024 15:35:34 PM - Deduplicate - There are 25 items in the existing budget.
+20/02/2024 15:35:34 PM - Deduplicate - There are 25 duplicates.
+20/02/2024 15:35:34 PM - Deduplicate - There are 33 expenses before arbitrary exceptions.
+20/02/2024 15:35:34 PM - ArbitraryExceptionsRemove - Removed 3 arbitrary exceptions.
+20/02/2024 15:35:34 PM - ExportExpenses - Exporting 30 expenses.
+20/02/2024 15:35:34 PM - ExportExpenses - Export successful.
+20/02/2024 15:45:14 PM - Main - Modified download account history n and use current month y for testing.
+20/02/2024 15:45:14 PM - Main - Welcome to Budginator!
+20/02/2024 15:45:14 PM - Main - Backlog: Write a function that imports the data directly into the budget instead of to output.csv
+20/02/2024 15:45:14 PM - Main - Backlog: Include an auto LastUpdated field on the budget.
+20/02/2024 15:45:14 PM - SetAccountHistoryPaths - Laptop detected.
+20/02/2024 15:51:28 PM - Main - Modified download account history n and use current month y for testing.
+20/02/2024 15:51:28 PM - Main - Welcome to Budginator!
+20/02/2024 15:51:28 PM - Main - Backlog: Write a function that imports the data directly into the budget instead of to output.csv
+20/02/2024 15:51:28 PM - Main - Backlog: Include an auto LastUpdated field on the budget.
+20/02/2024 15:51:28 PM - SetAccountHistoryPaths - Laptop detected.
+20/02/2024 15:51:28 PM - StartAhk - StartAhk TESTMODE ON
+20/02/2024 15:51:28 PM - StartAhk - Laptop AHK
+20/02/2024 15:51:28 PM - SelectMonth - TESTMODE ON
+20/02/2024 15:51:28 PM - SelectMonth - Selected month is February
+20/02/2024 15:51:28 PM - ImportAccountHistory - 2418 items in accountHistory0
+20/02/2024 15:51:28 PM - ImportAccountHistory - 1232 items in accountHistory1
+20/02/2024 15:51:28 PM - ImportAccountHistory - 3650 total items in account history.
+20/02/2024 15:51:28 PM - ImportAccountHistory - After trimming extraneous months and years there are 58.
+20/02/2024 15:51:28 PM - ImportExistingBudget - Importing budget data from 2024Budget.xlsx
+20/02/2024 15:51:28 PM - ImportExistingBudget - abbmonthName is Feb
+20/02/2024 15:51:28 PM - ImportExistingBudget - xlsx path is: C:\Users\jfluckiger\OneDrive\Budget\2024Budget.xlsx
+20/02/2024 15:51:28 PM - Deduplicate - There are 25 items in the existing budget.
+20/02/2024 15:51:28 PM - Deduplicate - There are 25 duplicates.
+20/02/2024 15:51:28 PM - Deduplicate - There are 33 expenses before arbitrary exceptions.
+20/02/2024 15:51:28 PM - ArbitraryExceptionsRemove - Removed 3 arbitrary exceptions.
+20/02/2024 15:51:28 PM - ExportExpenses - Exporting 30 expenses to xlsx.
+20/02/2024 15:51:28 PM - ExportExpenses - Export successful.
+20/02/2024 15:53:36 PM - Main - Note: test mode is on
+20/02/2024 15:53:36 PM - Main - Welcome to Budginator!
+20/02/2024 15:53:36 PM - Main - Backlog: Write a function that imports the data directly into the budget instead of to output.csv
+20/02/2024 15:53:36 PM - Main - Backlog: Include an auto LastUpdated field on the budget.
+20/02/2024 15:53:36 PM - SetAccountHistoryPaths - Laptop detected.
+20/02/2024 15:53:36 PM - StartAhk - StartAhk TESTMODE ON
+20/02/2024 15:53:36 PM - SelectMonth - TESTMODE ON
+20/02/2024 15:53:36 PM - SelectMonth - Selected month is February
+20/02/2024 15:53:36 PM - ImportAccountHistory - 2418 items in accountHistory0
+20/02/2024 15:53:36 PM - ImportAccountHistory - 1232 items in accountHistory1
+20/02/2024 15:53:36 PM - ImportAccountHistory - 3650 total items in account history.
+20/02/2024 15:53:36 PM - ImportAccountHistory - After trimming extraneous months and years there are 58.
+20/02/2024 15:53:36 PM - ImportExistingBudget - Importing budget data from 2024Budget.xlsx
+20/02/2024 15:53:36 PM - ImportExistingBudget - abbmonthName is Feb
+20/02/2024 15:53:36 PM - ImportExistingBudget - xlsx path is: C:\Users\jfluckiger\OneDrive\Budget\2024Budget.xlsx
+20/02/2024 15:53:36 PM - Deduplicate - There are 25 items in the existing budget.
+20/02/2024 15:53:36 PM - Deduplicate - There are 25 duplicates.
+20/02/2024 15:53:36 PM - Deduplicate - There are 33 expenses before arbitrary exceptions.
+20/02/2024 15:53:36 PM - ArbitraryExceptionsRemove - Removed 3 arbitrary exceptions.
+20/02/2024 15:53:36 PM - ExportExpenses - Exporting 30 expenses to xlsx.
+20/02/2024 15:53:36 PM - ExportExpenses - Export successful.
+20/02/2024 15:55:20 PM - Main - Note: test mode is on
+20/02/2024 15:55:20 PM - Main - Welcome to Budginator!
+20/02/2024 15:55:20 PM - Main - Backlog: Write a function that imports the data directly into the budget instead of to output.csv
+20/02/2024 15:55:20 PM - Main - Backlog: Include an auto LastUpdated field on the budget.
+20/02/2024 15:55:20 PM - SetAccountHistoryPaths - Laptop detected.
+20/02/2024 15:55:20 PM - StartAhk - StartAhk TESTMODE ON
+20/02/2024 15:55:20 PM - SelectMonth - TESTMODE ON
+20/02/2024 15:55:20 PM - SelectMonth - Selected month is February
+20/02/2024 15:55:20 PM - ImportAccountHistory - 2418 items in accountHistory0
+20/02/2024 15:55:20 PM - ImportAccountHistory - 1232 items in accountHistory1
+20/02/2024 15:55:20 PM - ImportAccountHistory - 3650 total items in account history.
+20/02/2024 15:55:20 PM - ImportAccountHistory - After trimming extraneous months and years there are 58.
+20/02/2024 15:55:20 PM - ImportExistingBudget - Importing budget data from 2024Budget.xlsx
+20/02/2024 15:55:20 PM - ImportExistingBudget - abbmonthName is Feb
+20/02/2024 15:55:20 PM - ImportExistingBudget - xlsx path is: C:\Users\jfluckiger\OneDrive\Budget\2024Budget.xlsx
+20/02/2024 15:55:20 PM - Deduplicate - There are 25 items in the existing budget.
+20/02/2024 15:55:20 PM - Deduplicate - There are 25 duplicates.
+20/02/2024 15:55:20 PM - Deduplicate - There are 33 expenses before arbitrary exceptions.
+20/02/2024 15:55:20 PM - ArbitraryExceptionsRemove - Removed 3 arbitrary exceptions.
+20/02/2024 15:55:20 PM - ExportExpenses - Exporting 30 expenses to xlsx.
+20/02/2024 15:55:20 PM - ExportExpenses - Export successful.
+20/02/2024 15:56:04 PM - Main - Note: test mode is on
+20/02/2024 15:56:04 PM - Main - Welcome to Budginator!
+20/02/2024 15:56:04 PM - Main - Backlog: Write a function that imports the data directly into the budget instead of to output.csv
+20/02/2024 15:56:04 PM - Main - Backlog: Include an auto LastUpdated field on the budget.
+20/02/2024 15:56:04 PM - SetAccountHistoryPaths - Laptop detected.
+20/02/2024 15:56:04 PM - StartAhk - StartAhk TESTMODE ON
+20/02/2024 15:56:04 PM - SelectMonth - TESTMODE ON
+20/02/2024 15:56:04 PM - SelectMonth - Selected month is February
+20/02/2024 15:56:04 PM - ImportAccountHistory - 2418 items in accountHistory0
+20/02/2024 15:56:04 PM - ImportAccountHistory - 1232 items in accountHistory1
+20/02/2024 15:56:04 PM - ImportAccountHistory - 3650 total items in account history.
+20/02/2024 15:56:05 PM - ImportAccountHistory - After trimming extraneous months and years there are 58.
+20/02/2024 15:56:05 PM - ImportExistingBudget - Importing budget data from 2024Budget.xlsx
+20/02/2024 15:56:05 PM - ImportExistingBudget - abbmonthName is Feb
+20/02/2024 15:56:05 PM - ImportExistingBudget - xlsx path is: C:\Users\jfluckiger\OneDrive\Budget\2024Budget.xlsx
+20/02/2024 15:56:05 PM - Deduplicate - There are 25 items in the existing budget.
+20/02/2024 15:56:05 PM - Deduplicate - There are 25 duplicates.
+20/02/2024 15:56:05 PM - Deduplicate - There are 33 expenses before arbitrary exceptions.
+20/02/2024 15:56:05 PM - ArbitraryExceptionsRemove - Removed 3 arbitrary exceptions.
+20/02/2024 15:56:05 PM - ExportExpenses - Exporting 30 expenses to xlsx.
+20/02/2024 15:56:05 PM - ExportExpenses - Export successful.
+20/02/2024 15:57:14 PM - Main - Note: test mode is on
+20/02/2024 15:57:14 PM - Main - Welcome to Budginator!
+20/02/2024 15:57:14 PM - Main - Backlog: Write a function that imports the data directly into the budget instead of to output.csv
+20/02/2024 15:57:14 PM - Main - Backlog: Include an auto LastUpdated field on the budget.
+20/02/2024 15:57:14 PM - SetAccountHistoryPaths - Laptop detected.
+20/02/2024 15:57:14 PM - StartAhk - StartAhk TESTMODE ON
+20/02/2024 15:57:14 PM - SelectMonth - TESTMODE ON
+20/02/2024 15:57:14 PM - SelectMonth - Selected month is February
+20/02/2024 15:57:14 PM - ImportAccountHistory - 2418 items in accountHistory0
+20/02/2024 15:57:14 PM - ImportAccountHistory - 1232 items in accountHistory1
+20/02/2024 15:57:14 PM - ImportAccountHistory - 3650 total items in account history.
+20/02/2024 15:57:14 PM - ImportAccountHistory - After trimming extraneous months and years there are 58.
+20/02/2024 15:57:14 PM - ImportExistingBudget - Importing budget data from 2024Budget.xlsx
+20/02/2024 15:57:14 PM - ImportExistingBudget - abbmonthName is Feb
+20/02/2024 15:57:14 PM - ImportExistingBudget - xlsx path is: C:\Users\jfluckiger\OneDrive\Budget\2024Budget.xlsx
+20/02/2024 15:57:15 PM - Deduplicate - There are 25 items in the existing budget.
+20/02/2024 15:57:15 PM - Deduplicate - There are 25 duplicates.
+20/02/2024 15:57:15 PM - Deduplicate - There are 33 expenses before arbitrary exceptions.
+20/02/2024 15:57:15 PM - ArbitraryExceptionsRemove - Removed 3 arbitrary exceptions.
+20/02/2024 15:57:15 PM - ExportExpenses - Exporting 30 expenses to xlsx.
+20/02/2024 15:57:15 PM - ExportExpenses - Export successful.
+20/02/2024 18:22:20 PM - Main - Note: test mode is on
+20/02/2024 18:22:20 PM - Main - Welcome to Budginator!
+20/02/2024 18:22:20 PM - Main - Backlog: Write a function that imports the data directly into the budget instead of to output.csv
+20/02/2024 18:22:20 PM - Main - Backlog: Include an auto LastUpdated field on the budget.
+20/02/2024 18:22:20 PM - SetAccountHistoryPaths - Laptop detected.
+20/02/2024 18:22:20 PM - StartAhk - StartAhk TESTMODE ON
+20/02/2024 18:22:20 PM - SelectMonth - TESTMODE ON
+20/02/2024 18:22:20 PM - SelectMonth - Selected month is February
+20/02/2024 18:22:20 PM - ImportAccountHistory - 2418 items in accountHistory0
+20/02/2024 18:22:20 PM - ImportAccountHistory - 1232 items in accountHistory1
+20/02/2024 18:22:20 PM - ImportAccountHistory - 3650 total items in account history.
+20/02/2024 18:22:20 PM - ImportAccountHistory - After trimming extraneous months and years there are 58.
+20/02/2024 18:22:20 PM - ImportExistingBudget - Importing budget data from 2024Budget.xlsx
+20/02/2024 18:22:20 PM - ImportExistingBudget - abbmonthName is Feb
+20/02/2024 18:22:20 PM - ImportExistingBudget - xlsx path is: C:\Users\jfluckiger\OneDrive\Budget\2024Budget.xlsx
+20/02/2024 18:22:20 PM - Deduplicate - There are 25 items in the existing budget.
+20/02/2024 18:22:20 PM - Deduplicate - There are 25 duplicates.
+20/02/2024 18:22:20 PM - Deduplicate - There are 33 expenses before arbitrary exceptions.
+20/02/2024 18:22:20 PM - ArbitraryExceptionsRemove - Removed 3 arbitrary exceptions.
+20/02/2024 18:22:20 PM - ExportExpenses - Exporting 30 expenses to xlsx.
+20/02/2024 18:22:20 PM - ExportExpenses - Export to csv successful.
