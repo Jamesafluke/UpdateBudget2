@@ -40,13 +40,15 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: SanityCheck
         run: |
-          $PSVersionTable
+          pwsh
+          echo $PSVersionTable
           pwd   
           ls
 
       # Runs a single command using the runners shell
       - name: ArbitraryExceptionsUnitTest
         run: |
+
           cd ./UnitTests/ArbitraryExceptionsUnitTest
           ./ArbitraryExceptionsUnitTest.ps1
           cd ../..
