@@ -39,7 +39,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: SanityCheck
         run: |
-          echo $PSVersionTable
+          pwsh $PSVersionTable
           pwd   
           ls
 
@@ -48,6 +48,7 @@ jobs:
         run: |
           pwsh
           cd ./UnitTests/ArbitraryExceptionsUnitTest
+          pwsh $PSScriptRoot
           pwsh ./ArbitraryExceptionsUnitTest.ps1
           cd ../..
 
